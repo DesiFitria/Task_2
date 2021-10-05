@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        PENDAFTARAN PASIEN
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="desainpendaftaranRS.css">
+</head>
+
+<body>
+        <div class="header">
+            <div class="header-logo">PENDAFTARAN PASIEN RS ADVENT</div>
+            <div class="header-list">
+                <ul>
+                    <li>Tentang</li>
+                    <li>Hubungi Kami</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <form method="GET" action="./detailpasien.html">
+                <p>
+                    <label>Nama Lengkap Pasien :</label>
+                    <br>
+                    <input type="text" name="namalengkap" required/>
+                    <br><br>
+                    <label>Nomor Telepon Pasien :</label>
+                    <br>
+                    <input type="tel" name="nomor" pattern="[0-9]{12}" required/>
+                    <br><br> 
+                    <label>Keluhan Penyakit :</label>
+                    <br>
+                    <textarea id="Keluhan" name="keluhanpenyakit" placeholder="jelaskan keluhan penyakit yang anda rasakan" rows="5" cols="45" required></textarea>
+                    <br><br>
+                    <label>Jadwal Rujukan / Berobat :</label>
+                    <br>
+                    <input type="date" name="jadwal" required/>
+                    <br><br>
+                    <label>Upload Surat Rujukan / Rawat Jalan Pasein</label>
+                    <br>
+                    <input type="file" name="photo" required/>
+                    <br><br>
+                    <label>Upload KTP Pasein</label>
+                    <br>
+                    <input type="file" name="photo" required/>
+                    <br><br>
+                    <label>Upload Kartu BPJS Pasein (opsional)</label>
+                    <br>
+                    <input type="file" name="photo" required/>
+                    <br><br>
+                </p>
+                <input type="submit"/>
+            </form>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-logo">Terima Kasih Telah Mendaftar</div>
+            <div class="footer-list">
+                <ul>
+                    <li>Tentang</li>
+                    <li>Hubungi Kami</li>
+                </ul>
+            </div>
+        </div>
+</body>
+        <footer>
+            Copyright. All rights reserved.
+        </footer>
+</html>
